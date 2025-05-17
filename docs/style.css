@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Web:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Inter Web', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  line-height: 1.6;
+}
+
+header, footer {
+  background-color: #0f1c3f;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+}
+
+h2 {
+  color: #ffe600;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #ffe600;
+  display: inline-block;
+  font-weight: 600;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 15px;
+  max-width: 800px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.foto-perfil {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #ffe600;
+  margin-bottom: 1em;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✔️ ";
+  margin-right: 0.5em;
+  color: #ffe600;
+}
+
+footer {
+  margin-top: 2em;
+}
