@@ -1,17 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const links = document.querySelectorAll("a[href^='#']");
-
-  links.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const targetId = this.getAttribute("href").substring(1);
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        targetSection.scrollIntoView({
-          behavior: "smooth",
-        });
-      }
-    });
-  });
+// Atualiza o ano automaticamente
+document.addEventListener("DOMContentLoaded", () => {
+  const year = new Date().getFullYear();
+  document.querySelector("footer p").innerHTML =
+    `&copy; ${year} Igor Vinicius Santos Fonseca. Todos os direitos reservados.`;
 });
+
+// Animações de aparição ao rolar (scroll reveal)
+const elements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
