@@ -35,7 +35,7 @@
       <h2>Sobre Mim</h2>
       <p>
         Sou graduando em <strong>Desenvolvimento de Software Multiplataforma</strong> pela 
-        <strong>FATEC Jacareí</strong>, com <strong>32 anos</strong> e experiência sólida nas áreas 
+        <strong>FATEC Jacareí</strong>, com <strong>33 anos</strong> e experiência sólida nas áreas 
         de <strong>gestão, suporte técnico e atendimento ao cliente</strong>.
       </p>
 
@@ -58,28 +58,76 @@
 </section>
 
 
-  <section id="projetos" class="section projects hidden">
-    <h2>Projetos em Destaque</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>MENTORA</h3>
-        <p>Este projeto é o mais atual e a intenção é apoiar alunos, professores e instituições de ensino (IES) através de uma plataforma que utiliza Machine Learning clássico para prever <strong>Desempenho Acadêmico</strong> e <strong>Risco de Evasão</strong> dos alunos.</p>
-        <a href="https://github.com/innocode-solutions/abp_5dsm/blob/main/README.md" target="_blank">Ver Projeto</a>
-      </div>
+  <style>
+  /* Apenas regras de layout para alinhar e centralizar, sem alterar cores */
+  .section.projects .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as caixas da última linha */
+    gap: 20px; /* Espaço entre as caixas (ajuste se necessário) */
+  }
 
-      <div class="card">
-        <h3>floatData</h3>
-        <p>Este projeto é uma solução completa para o monitoramento de <strong>derivadores</strong> (dispositivos de rastreamento) em tempo real.</p>
-        <a href="https://github.com/InnoCodeSolutions/ABP_4DSM/blob/main/README.md" target="_blank">Ver Projeto</a>
-      </div>
+  .section.projects .card {
+    /* Define o tamanho flexível das caixas sem quebrar o layout */
+    flex: 1 1 300px; 
+    max-width: 350px; 
+  }
+</style>
 
-      <div class="card">
-        <h3>Treinamento Scrum</h3>
-        <p>O objetivo deste projeto foi desenvolver um sistema web que ensinasse todos os processos e artefatos da metodologia ágil Scrum, juntamente com recursos para provas de fixação.</p>
-        <a href="https://github.com/TerraSoftwarehouse/Projeto-Treinamento-Scrum/blob/master/README.md" target="_blank">Ver Projeto</a>
-      </div>
+<section id="projetos" class="section projects hidden">
+  <h2>Projetos em Destaque</h2>
+  <div class="grid">
+
+    <!-- 1° Semestre -->
+    <div class="card">
+      <h3>
+        <a href="https://github.com/TerraSoftwarehouse/Projeto-Treinamento-Scrum/blob/master/README.md" target="_blank" style="text-decoration: none; color: inherit;">Treinamento Scrum</a>
+      </h3>
+      <p>Sistema web interativo desenvolvido para o ensino da metodologia ágil Scrum, abrangendo desde os conceitos, processos e artefatos até a aplicação prática através de simulados e provas de fixação.</p>
     </div>
-  </section>
+
+    <!-- 2° Semestre -->
+    <div class="card">
+      <h3>
+        <a href="https://github.com/projetoPDali" target="_blank" style="text-decoration: none; color: inherit;">Projeto PDali</a>
+      </h3>
+      <p>Aplicação focada em <em>[inserir principal funcionalidade, ex: gestão de dados]</em>, desenvolvida com o intuito de aplicar na prática os conceitos de programação estruturada e interfaces visuais abordados no semestre.</p>
+    </div>
+
+    <!-- 3° Semestre -->
+    <div class="card">
+      <h3>
+        <a href="https://github.com/TerraGeoManager/TerraGeoManager/tree/main" target="_blank" style="text-decoration: none; color: inherit;">TerraGeoManager</a>
+      </h3>
+      <p>Plataforma de gestão tecnológica desenhada para <em>[inserir nicho, ex: georreferenciamento e análise de áreas]</em>, integrando ferramentas de mapeamento e organização de dados para otimizar a tomada de decisão.</p>
+    </div>
+
+    <!-- 4° Semestre -->
+    <div class="card">
+      <h3>
+        <a href="https://github.com/InnoCodeSolutions/ABP_4DSM/tree/main" target="_blank" style="text-decoration: none; color: inherit;">floatData</a>
+      </h3>
+      <p>Solução IoT completa para o monitoramento e rastreamento de derivadores oceânicos em tempo real, focada na precisão da coleta de dados telemétricos e na eficiência da transmissão contínua.</p>
+    </div>
+
+    <!-- 5° Semestre -->
+    <div class="card">
+      <h3>
+        <a href="https://github.com/innocode-solutions/abp_5dsm" target="_blank" style="text-decoration: none; color: inherit;">MENTORA</a>
+      </h3>
+      <p>Plataforma educacional baseada em Machine Learning voltada para instituições de ensino (IES), capaz de processar dados para prever o desempenho acadêmico e identificar de forma antecipada o risco de evasão escolar.</p>
+    </div>
+
+    <!-- 6° Semestre -->
+    <div class="card">
+      <h3>
+        <a href="https://github.com/innocode-solutions/abp_6dsm#sobre" target="_blank" style="text-decoration: none; color: inherit;">ProconBotJacareí</a>
+      </h3>
+      <p>Chatbot inteligente integrado a uma base de conhecimento estruturada, desenhado para fornecer orientações jurídicas e esclarecer dúvidas com base no Código de Defesa do Consumidor (CDC).</p>
+    </div>
+
+  </div>
+</section>
 
   <section id="habilidades" class="section skills hidden">
     <h2>Habilidades Técnicas</h2>
