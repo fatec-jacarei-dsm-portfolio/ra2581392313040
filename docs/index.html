@@ -47,7 +47,7 @@
       <p>
         Busco uma oportunidade de <strong>estágio ou efetivação</strong> nas áreas de 
         <strong>desenvolvimento, suporte técnico ou análise de sistemas</strong>, onde eu possa 
-        <strong>aplicar meus conhecimentos</strong>, propor <strong>soluções práticas</strong> 
+        <strong>aplicar meus conhecimentos</strong>, exigir <strong>soluções práticas</strong> 
         e evoluir continuamente no aprimoramento das minhas 
         <strong>habilidades técnicas e interpessoais</strong>.
       </p>
@@ -57,20 +57,44 @@
   </div>
 </section>
 
-
   <style>
-  /* Apenas regras de layout para alinhar e centralizar, sem alterar cores */
+  /* Regras de layout para alinhar e centralizar as caixas de forma limpa */
   .section.projects .grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza as caixas da última linha */
-    gap: 20px; /* Espaço entre as caixas (ajuste se necessário) */
+    justify-content: center;
+    gap: 25px;
   }
 
   .section.projects .card {
-    /* Define o tamanho flexível das caixas sem quebrar o layout */
-    flex: 1 1 300px; 
-    max-width: 350px; 
+    flex: 1 1 400px; 
+    max-width: 480px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .section.projects .card p {
+    margin: 12px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .section.projects .semester-tag {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .section.projects .repo-link {
+    margin-top: auto;
+    padding-top: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: right;
   }
 </style>
 
@@ -78,52 +102,82 @@
   <h2>Projetos em Destaque</h2>
   <div class="grid">
 
-    <!-- 1° Semestre -->
     <div class="card">
-      <h3>
-        <a href="https://github.com/TerraSoftwarehouse/Projeto-Treinamento-Scrum/blob/master/README.md" target="_blank" style="text-decoration: none; color: inherit;">Treinamento Scrum</a>
-      </h3>
-      <p>Sistema web interativo desenvolvido para o ensino da metodologia ágil Scrum, abrangendo desde os conceitos, processos e artefatos até a aplicação prática através de simulados e provas de fixação.</p>
+      <div>
+        <small class="semester-tag">1° Semestre</small>
+        <h3>Treinamento Scrum</h3>
+        <p><strong>Descrição:</strong> Sistema web interativo desenvolvido para o ensino da metodologia ágil Scrum, abrangendo desde os conceitos, processos e artefatos até a aplicação prática através de simulados e provas de fixação.</p>
+        <p><strong>Contribuição Pessoal:</strong> Atuação no mapeamento de requisitos de software e estruturação lógica das regras de validação para os módulos de questionários e fixação de conteúdo.</p>
+        <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript.</p>
+      </div>
+      <div class="repo-link">
+        <a href="https://github.com/TerraSoftwarehouse/Projeto-Treinamento-Scrum/blob/master/README.md" target="_blank">Acessar Repositório →</a>
+      </div>
     </div>
 
-    <!-- 2° Semestre -->
     <div class="card">
-      <h3>
-        <a href="https://github.com/projetoPDali" target="_blank" style="text-decoration: none; color: inherit;">Projeto PDali</a>
-      </h3>
-      <p>Aplicação focada em <em>[inserir principal funcionalidade, ex: gestão de dados]</em>, desenvolvida com o intuito de aplicar na prática os conceitos de programação estruturada e interfaces visuais abordados no semestre.</p>
+      <div>
+        <small class="semester-tag">2° Semestre</small>
+        <h3>Projeto PDali</h3>
+        <p><strong>Descrição:</strong> Aplicação focada em <em>[inserir principal funcionalidade, ex: gestão de dados]</em>, desenvolvida com o intuito de aplicar na prática os conceitos de programação estruturada e interfaces visuais abordados no semestre.</p>
+        <p><strong>Contribuição Pessoal:</strong> <em> Desenvolvimento de módulos da interface e lógica de manipulação de dados.</em>.</p>
+        <p><strong>Tecnologias:</strong> <em>JavaScript, TypeScript, HTML5, CSS3, SQL</em>.</p>
+      </div>
+      <div class="repo-link">
+        <a href="https://github.com/projetoPDali" target="_blank">Acessar Repositório →</a>
+      </div>
     </div>
 
-    <!-- 3° Semestre -->
     <div class="card">
-      <h3>
-        <a href="https://github.com/TerraGeoManager/TerraGeoManager/tree/main" target="_blank" style="text-decoration: none; color: inherit;">TerraGeoManager</a>
-      </h3>
-      <p>Plataforma de gestão tecnológica desenhada para <em>[inserir nicho, ex: georreferenciamento e análise de áreas]</em>, integrando ferramentas de mapeamento e organização de dados para otimizar a tomada de decisão.</p>
+      <div>
+        <small class="semester-tag">3° Semestre</small>
+        <h3>TerraGeoManager</h3>
+        <p><strong>Descrição:</strong> Plataforma de gestão tecnológica desenhada para <em>[inserir nicho, ex: georreferenciamento e análise de áreas]</em>, integrando ferramentas de mapeamento e organização de dados para otimizar a tomada de decisão.</p>
+        <p><strong>Contribuição Pessoal:</strong> <em> Integração com APIs de mapas e estruturação do banco de dados não relacional.</em>.</p>
+        <p><strong>Tecnologias:</strong> <em>JavaScript, TypeScript, HTML5, CSS3, NoSQL</em>.</p>
+      </div>
+      <div class="repo-link">
+        <a href="https://github.com/TerraGeoManager/TerraGeoManager/tree/main" target="_blank">Acessar Repositório →</a>
+      </div>
     </div>
 
-    <!-- 4° Semestre -->
     <div class="card">
-      <h3>
-        <a href="https://github.com/InnoCodeSolutions/ABP_4DSM/tree/main" target="_blank" style="text-decoration: none; color: inherit;">floatData</a>
-      </h3>
-      <p>Solução IoT completa para o monitoramento e rastreamento de derivadores oceânicos em tempo real, focada na precisão da coleta de dados telemétricos e na eficiência da transmissão contínua.</p>
+      <div>
+        <small class="semester-tag">4° Semestre</small>
+        <h3>floatData</h3>
+        <p><strong>Descrição:</strong> Solução IoT completa para o monitoramento e rastreamento de derivadores oceânicos em tempo real, focada na precisão da coleta de dados telemétricos e na eficiência da transmissão contínua.</p>
+        <p><strong>Contribuição Pessoal:</strong> Desenvolvimento dos mecanismos de recebimento de telemetria em tempo real e estruturação dos dashboards de visualização dos dados dos rastreadores.</p>
+        <p><strong>Tecnologias:</strong> Node.js, TypeScript, APIs REST, IoT, Bancos de Dados.</p>
+      </div>
+      <div class="repo-link">
+        <a href="https://github.com/InnoCodeSolutions/ABP_4DSM/tree/main" target="_blank">Acessar Repositório →</a>
+      </div>
     </div>
 
-    <!-- 5° Semestre -->
     <div class="card">
-      <h3>
-        <a href="https://github.com/innocode-solutions/abp_5dsm" target="_blank" style="text-decoration: none; color: inherit;">MENTORA</a>
-      </h3>
-      <p>Plataforma educacional baseada em Machine Learning voltada para instituições de ensino (IES), capaz de processar dados para prever o desempenho acadêmico e identificar de forma antecipada o risco de evasão escolar.</p>
+      <div>
+        <small class="semester-tag">5° Semestre</small>
+        <h3>MENTORA</h3>
+        <p><strong>Descrição:</strong> Plataforma educacional baseada em Machine Learning voltada para instituições de ensino (IES), capaz de processar dados para prever o desempenho acadêmico e identificar de forma antecipada o risco de evasão escolar.</p>
+        <p><strong>Contribuição Pessoal:</strong> Implementação de rotinas de Quality Control (QC) e testes estruturados no fluxo de análise preditiva, garantindo a consistência das saídas do modelo de Machine Learning clássico.</p>
+        <p><strong>Tecnologias:</strong> Python, Machine Learning, Node.js, TypeScript.</p>
+      </div>
+      <div class="repo-link">
+        <a href="https://github.com/innocode-solutions/abp_5dsm" target="_blank">Acessar Repositório →</a>
+      </div>
     </div>
 
-    <!-- 6° Semestre -->
     <div class="card">
-      <h3>
-        <a href="https://github.com/innocode-solutions/abp_6dsm#sobre" target="_blank" style="text-decoration: none; color: inherit;">ProconBotJacareí</a>
-      </h3>
-      <p>Chatbot inteligente integrado a uma base de conhecimento estruturada, desenhado para fornecer orientações jurídicas e esclarecer dúvidas com base no Código de Defesa do Consumidor (CDC).</p>
+      <div>
+        <small class="semester-tag">6° Semestre</small>
+        <h3>ProconBotJacareí</h3>
+        <p><strong>Descrição:</strong> Chatbot inteligente integrado a uma base de conhecimento estruturada, desenhado para fornecer orientações jurídicas e esclarecer dúvidas com base no Código de Defesa do Consumidor (CDC).</p>
+        <p><strong>Contribuição Pessoal:</strong> Desenvolvimento do microsserviço de correspondência de mensagens utilizando algoritmos de similaridade de strings para o processamento de FAQs e automação das validações de conformidade com o CDC.</p>
+        <p><strong>Tecnologias:</strong> Node.js, TypeScript, String-Similarity, NLP / Chatbot Engine.</p>
+      </div>
+      <div class="repo-link">
+        <a href="https://github.com/innocode-solutions/abp_6dsm#sobre" target="_blank">Acessar Repositório →</a>
+      </div>
     </div>
 
   </div>
@@ -155,7 +209,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Igor Vinicius Santos Fonseca. Todos os direitos reservados.</p>
+    <p>&copy; 2026 Igor Vinicius Santos Fonseca. Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js" defer></script>
