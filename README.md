@@ -11,4 +11,4 @@
 
 🔗 [Acese o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392313040/) 
 
-🎤 [Pitch de Apresentação (vídeo)]()
+🎤 [Pitch de Apresentação (vídeo)](./docs/anexos/Recording-20260612_221106.webm)
